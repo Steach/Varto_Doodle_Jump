@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1733644636662794254}
   - component: {fileID: 9004941267645967997}
   - component: {fileID: 3766941472645118655}
+  - component: {fileID: 5808752618486394085}
   m_Layer: 0
   m_Name: idle_side
   m_TagString: Untagged
@@ -201,8 +202,21 @@ MonoBehaviour:
   _groundMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &5808752618486394085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3433032877048047004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3ac1320d1f1524080186bae3071a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _playerSpriteRenderer: {fileID: 3433032877048046994}
   _shadowSpriteRenderer: {fileID: 3433032877061787966}
+  _playerMovement: {fileID: 3766941472645118655}
 --- !u!1 &3433032877061787960
 GameObject:
   m_ObjectHideFlags: 0

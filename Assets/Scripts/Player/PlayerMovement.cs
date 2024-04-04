@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _moveSpeed;
@@ -10,10 +10,10 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _groundCheckDistance;
     [SerializeField] private LayerMask _groundMask;
 
-    [SerializeField] private SpriteRenderer _playerSpriteRenderer;
-    [SerializeField] private SpriteRenderer _shadowSpriteRenderer;
-
+    private float _moveDirection;
     private bool _isGrounded;
+    public bool IsGrounded { get { return _isGrounded; } }
+    public float MoveDirection { get { return _moveDirection; } }
 
 
     private void Update()
@@ -23,10 +23,9 @@ public class Movement : MonoBehaviour
     }
     private void Move()
     {
-        float _moveDirection = Input.GetAxis("Horizontal");
+        _moveDirection = Input.GetAxis("Horizontal");
         if(!_isGrounded)
             _playerRB2D.velocity = new Vector2(_moveDirection *_moveSpeed, _playerRB2D.velocity.y);
-        Sprits(_moveDirection);
     }
 
     private void Jump()
@@ -35,18 +34,5 @@ public class Movement : MonoBehaviour
         Debug.DrawLine(_playerRB2D.position, _playerRB2D.position + Vector2.down * _groundCheckDistance, Color.green);
         if(Input.GetKeyDown(KeyCode.Space) && _isGrounded)
             _playerRB2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-    }
-
-    private void Sprits(float direction)
-    {
-        if (_isGrounded)
-            _shadowSpriteRenderer.enabled = true;
-        else
-            _shadowSpriteRenderer.enabled = false;
-
-        if (direction > 0)
-            _playerSpriteRenderer.flipX = true;
-        else if (direction < 0)
-            _playerSpriteRenderer.flipX = false;
     }
 }

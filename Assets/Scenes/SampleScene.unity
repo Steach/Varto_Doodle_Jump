@@ -1516,8 +1516,52 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3433032877048047004, guid: df254403676944e786502cd04e5bc31e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1306796136}
   m_SourcePrefab: {fileID: 100100000, guid: df254403676944e786502cd04e5bc31e, type: 3}
+--- !u!1 &1306796132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3433032877048047004, guid: df254403676944e786502cd04e5bc31e, type: 3}
+  m_PrefabInstance: {fileID: 1306796131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1306796133 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3433032877061787966, guid: df254403676944e786502cd04e5bc31e, type: 3}
+  m_PrefabInstance: {fileID: 1306796131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306796134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3766941472645118655, guid: df254403676944e786502cd04e5bc31e, type: 3}
+  m_PrefabInstance: {fileID: 1306796131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306796132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e6c9f164bb72c44a21177d21c80b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &1306796135 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3433032877048046994, guid: df254403676944e786502cd04e5bc31e, type: 3}
+  m_PrefabInstance: {fileID: 1306796131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306796136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306796132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3ac1320d1f1524080186bae3071a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerSpriteRenderer: {fileID: 1306796135}
+  _shadowSpriteRenderer: {fileID: 1306796133}
+  _playerMovement: {fileID: 1306796134}
 --- !u!1001 &1528511614
 PrefabInstance:
   m_ObjectHideFlags: 0
