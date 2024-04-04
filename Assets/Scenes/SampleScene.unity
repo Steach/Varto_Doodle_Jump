@@ -168,6 +168,58 @@ Transform:
   - {fileID: 346609810}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &223986759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223986761}
+  - component: {fileID: 223986760}
+  m_Layer: 0
+  m_Name: ChangeColorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &223986760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223986759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb6926ca38944847b3dcadab3b42ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerAnimator: {fileID: 1306796139}
+  _blocksSpriteRenderer: {fileID: 0}
+  _playerIdleAnimation:
+  - {fileID: 9100000, guid: 193c6f790d254ad09fa1cf4dbbee7134, type: 2}
+  - {fileID: 9100000, guid: 440807e470ea417e8e112750805de6e6, type: 2}
+  - {fileID: 9100000, guid: 01ea2adb78a6431ea9b76ad9eb2cf421, type: 2}
+  - {fileID: 9100000, guid: 6ffe79eff7e24c7badbd1cf27d136365, type: 2}
+  - {fileID: 9100000, guid: 940270955e1f4790a0fd6176d5df3573, type: 2}
+--- !u!4 &223986761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223986759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.61611, y: -1.7275434, z: -0.024693398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346609809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,52 +1568,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3433032877048047004, guid: df254403676944e786502cd04e5bc31e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1306796136}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df254403676944e786502cd04e5bc31e, type: 3}
---- !u!1 &1306796132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3433032877048047004, guid: df254403676944e786502cd04e5bc31e, type: 3}
+--- !u!95 &1306796139 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3433032877048047005, guid: df254403676944e786502cd04e5bc31e, type: 3}
   m_PrefabInstance: {fileID: 1306796131}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &1306796133 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3433032877061787966, guid: df254403676944e786502cd04e5bc31e, type: 3}
-  m_PrefabInstance: {fileID: 1306796131}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1306796134 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3766941472645118655, guid: df254403676944e786502cd04e5bc31e, type: 3}
-  m_PrefabInstance: {fileID: 1306796131}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306796132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8e6c9f164bb72c44a21177d21c80b69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &1306796135 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3433032877048046994, guid: df254403676944e786502cd04e5bc31e, type: 3}
-  m_PrefabInstance: {fileID: 1306796131}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1306796136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306796132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3ac1320d1f1524080186bae3071a59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerSpriteRenderer: {fileID: 1306796135}
-  _shadowSpriteRenderer: {fileID: 1306796133}
-  _playerMovement: {fileID: 1306796134}
 --- !u!1001 &1528511614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1686,3 +1699,4 @@ SceneRoots:
   - {fileID: 1697948323}
   - {fileID: 1528511614}
   - {fileID: 128023013}
+  - {fileID: 223986761}
